@@ -10,6 +10,7 @@ import UIKit
 class SelectionVC: UIViewController {
 	
 	let backgroundImageView = BGImageView(frame: .zero)
+	let startButton = StartButton()
 
 	
 	override func viewDidLoad() {
@@ -17,14 +18,25 @@ class SelectionVC: UIViewController {
 		
 		view.backgroundColor = .systemPink
 		layoutUI()
+		startButton.addTarget(self, action: #selector(startButtonTapped(_:)), for: .touchUpInside)
 	}
 	
 	
 	//MARK: - Private
 	
+	@objc private func startButtonTapped(_ sender: UIButton) {
+		print(#function)
+		//TODO: - identify the current selections
+		//TODO: - init CardsVC and push it into the navigation stack
+	}
+	
+	
 	private func layoutUI() {
 		
 		view.addSubview(backgroundImageView)
+		view.addSubview(startButton)
+		
+		let padding: CGFloat = 20
 		
 		NSLayoutConstraint.activate([
 			backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -32,6 +44,10 @@ class SelectionVC: UIViewController {
 			backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
 			backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
 		
+			startButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding * 3),
+			startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding * 3),
+			startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding * 2),
+			startButton.heightAnchor.constraint(equalToConstant: 80)
 		])
 	}
 }

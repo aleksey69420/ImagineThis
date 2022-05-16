@@ -11,6 +11,7 @@
 		5B2EE1AE28261D7700E0337A /* SelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EE1AD28261D7700E0337A /* SelectionVC.swift */; };
 		5B2EE1B328261D7700E0337A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2EE1B228261D7700E0337A /* Assets.xcassets */; };
 		5B2EE1DF282C87FF00E0337A /* BGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EE1DE282C87FF00E0337A /* BGImageView.swift */; };
+		5BE6D9C32831EAFE00FD603F /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6D9C22831EAFE00FD603F /* StartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		5B2EE1B228261D7700E0337A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B2EE1B728261D7700E0337A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B2EE1DE282C87FF00E0337A /* BGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImageView.swift; sourceTree = "<group>"; };
+		5BE6D9C22831EAFE00FD603F /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				5B2EE1DE282C87FF00E0337A /* BGImageView.swift */,
+				5BE6D9C22831EAFE00FD603F /* StartButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				5B2EE1DF282C87FF00E0337A /* BGImageView.swift in Sources */,
 				5B2EE1AE28261D7700E0337A /* SelectionVC.swift in Sources */,
+				5BE6D9C32831EAFE00FD603F /* StartButton.swift in Sources */,
 				5B2EE1AA28261D7700E0337A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
