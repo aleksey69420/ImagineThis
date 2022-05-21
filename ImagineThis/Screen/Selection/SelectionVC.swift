@@ -16,7 +16,7 @@ class SelectionVC: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		view.backgroundColor = .systemPink
+		view.backgroundColor = .systemBackground
 		layoutUI()
 		startButton.addTarget(self, action: #selector(startButtonTapped(_:)), for: .touchUpInside)
 	}
@@ -28,6 +28,8 @@ class SelectionVC: UIViewController {
 		print(#function)
 		//TODO: - identify the current selections
 		//TODO: - init CardsVC and push it into the navigation stack
+		let cardsVC = CardsVC(category: "Horror", level: "Easy")
+		navigationController?.pushViewController(cardsVC, animated: true)
 	}
 	
 	
