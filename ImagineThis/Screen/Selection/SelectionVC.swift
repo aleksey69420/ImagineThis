@@ -29,7 +29,11 @@ class SelectionVC: UIViewController {
 		//TODO: - identify the current selections
 		//TODO: - init CardsVC and push it into the navigation stack
 		let cardsVC = CardsVC(category: "Horror", level: "Easy")
-		navigationController?.pushViewController(cardsVC, animated: true)
+		
+		
+		DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+			self.navigationController?.pushViewController(cardsVC, animated: false)
+		}
 	}
 	
 	
